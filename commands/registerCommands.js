@@ -22,7 +22,7 @@ const rest = new REST({ version: '10' }).setToken(token);
 (async () => {
   try {
     await rest.put(
-      Routes.applicationGuildCommands('1193617958690365573', '1131172626367270972'),
+      Routes.applicationCommands('1193617958690365573'),
       {body: commands}
     )
     console.log('Successfully registered application commands.')
